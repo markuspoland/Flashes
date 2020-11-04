@@ -54,6 +54,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4072952393575790985
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,6 +136,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,6 +163,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8821719638759182506
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,15 +208,15 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: -0.444273, y: 8.966998, z: 0.56055737}
   m_Size: 17.978392
-  m_FadeMode: 1
+  m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.12237972
+  - screenRelativeHeight: 0.8315274
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6692851337494864921}
-  - screenRelativeHeight: 0.0051891776
+  - screenRelativeHeight: 0.03589872
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6336381185393435649}
