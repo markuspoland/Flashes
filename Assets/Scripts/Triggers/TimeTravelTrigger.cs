@@ -48,7 +48,7 @@ public class TimeTravelTrigger : MonoBehaviour
         {
             if (timeTravelType == TimeTravelType.BLINDED)
             {
-                playerAnim.SetTrigger("Blinded");
+                playerAnim.SetTrigger("blinded");
             }
             
             isTravelling = true;
