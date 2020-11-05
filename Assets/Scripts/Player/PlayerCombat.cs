@@ -22,7 +22,6 @@ public class PlayerCombat : MonoBehaviour
         if (playerController.ControlsLock()) return;
 
         AnimateAttack();
-        GrabWeapon();
     }
 
     private void AnimateAttack()
@@ -61,30 +60,6 @@ public class PlayerCombat : MonoBehaviour
 
         if (attackCooldownTimer < 1f)
             attackCooldownTimer += 1f * Time.deltaTime;
-    }
-
-    private void GrabWeapon()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Weapon weapon = playerController.triggerDetector.GetTouchingWeapon();
-            if (weapon == null) return;
-
-            weapon.GetComponent<InteractibleObject>().interactionEnabled = false;
-            playerController.ShowActionCamera();
-            TriggerAction("grabFromFloor");
-            TriggerAction("equippedAxe");
-            StartCoroutine(GrabWeaponFromFloor(weapon));
-            playerController.ShowDefaultCamera(2.1f);
-            EquippedWeapon = weapon;
-        }
-    }
-
-    IEnumerator GrabWeaponFromFloor(Weapon weapon)
-    {
-        yield return new WaitForSeconds(1f);
-        weapon.PickUp();
-        weapon.GrabWeapon();
     }
 
     private void TriggerAction(string action)

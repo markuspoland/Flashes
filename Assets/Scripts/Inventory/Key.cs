@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour, IKey
+public abstract class Key : MonoBehaviour, IKey
 {
-    public virtual void UseKey() { }
+    public abstract void UseKey();
 }

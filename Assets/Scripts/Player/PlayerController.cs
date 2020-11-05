@@ -16,14 +16,12 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public Animator animator;
-    [HideInInspector]
-    public TriggerDetector triggerDetector;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        triggerDetector = GetComponent<TriggerDetector>();
     }
+
     public bool ControlsLock()
     {
         return IsKilled || IsResurrecting || IsImmobilized;
