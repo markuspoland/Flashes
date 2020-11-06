@@ -20,7 +20,7 @@ public class TimeTravel : MonoBehaviour
     public Animator playerAnim;
     public PlayerController playerController;
 
-    //public ScenePostProcess postProcess;
+    public ScenePostProcess postProcess;
 
     void Start()
     {
@@ -35,7 +35,7 @@ public class TimeTravel : MonoBehaviour
 
     public void Flash()
     {
-        //StartCoroutine(TimeJump());
+        StartCoroutine(TimeJump());
     }
 
     IEnumerator TimeJumpAndFall()
@@ -69,18 +69,18 @@ public class TimeTravel : MonoBehaviour
 
     }
 
-    //IEnumerator TimeJump()
-    //{
-        //playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 1f;
+    IEnumerator TimeJump()
+    {
+        playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 1f;
 
-        //yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f);
 
-        //postProcess.FadeIn();
-        //yield return new WaitForSeconds(1f);
-        //postProcess.FadeOut();
+        postProcess.FadeIn();
+        yield return new WaitForSeconds(1f);
+        postProcess.FadeOut();
 
-        //playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = defaultShakeAmplitude;
-    //}
+        playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = defaultShakeAmplitude;
+    }
     private void RegainMovement()
     {
         //callback action is called from player controller see https://docs.microsoft.com/pl-pl/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-functions

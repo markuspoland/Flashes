@@ -13,6 +13,9 @@ public class TimeTravelTrigger : MonoBehaviour
 
     public TimeTravelType timeTravelType;
 
+    public float timeToDestroyWhenBlinded = 3f;
+    public float timeToDestroyWhenNothing = 6f;
+
     public TimeTravel timeTravel;
     bool isTravelling = false;
     public Animator playerAnim;
@@ -32,11 +35,11 @@ public class TimeTravelTrigger : MonoBehaviour
             {
                 case TimeTravelType.BLINDED:
                     timeTravel.FlashAndFall();
-                    Destroy(gameObject, 3f);
+                    Destroy(gameObject, timeToDestroyWhenBlinded);
                     break;
                 case TimeTravelType.NOTHING:
                     timeTravel.Flash();
-                    Destroy(gameObject, 3f);
+                    Destroy(gameObject, timeToDestroyWhenNothing);
                     break;
             }
         }
