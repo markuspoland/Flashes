@@ -10,13 +10,17 @@ public class PortalTraveller : MonoBehaviour {
     public Material[] originalMaterials { get; set; }
     public Material[] cloneMaterials { get; set; }
 
+    public TerrainCollider terrainCollider;
+
     public virtual void Teleport (Transform fromPortal, Transform toPortal, Vector3 pos, Quaternion rot) {
         transform.position = pos;
         transform.rotation = rot;
+        terrainCollider.enabled = true;
     }
 
     // Called when first touches portal
     public virtual void EnterPortalThreshold () {
+        terrainCollider.enabled = false;
         if (graphicsClone == null) {
             graphicsClone = Instantiate (graphicsObject);
             graphicsClone.transform.parent = graphicsObject.transform.parent;
@@ -35,6 +39,7 @@ public class PortalTraveller : MonoBehaviour {
         for (int i = 0; i < originalMaterials.Length; i++) {
             originalMaterials[i].SetVector ("sliceNormal", Vector3.zero);
         }
+        terrainCollider.enabled = true;
     }
 
     public void SetSliceOffsetDst (float dst, bool clone) {
