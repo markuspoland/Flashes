@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : PortalTraveller
+public class PlayerMovement : MonoBehaviour
 {
     float x, z;
     Vector3 move;
