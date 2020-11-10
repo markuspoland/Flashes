@@ -10,12 +10,23 @@ public class Hatch : MonoBehaviour
     public PlayerController playerController;
     public List<GameObject> objectToActivate;
     public List<GameObject> objectToDeactivate;
+    public ScenePostProcess postProcess;
+    bool flash = false;
 
     IInventory inventory;
 
     private void Start()
     {
+        
         inventory = FindObjectOfType<Inventory>();
+    }
+
+    private void Update()
+    {
+        if (flash)
+        {
+            postProcess.FadeIn();
+        }
     }
 
     public void OpenHatch()
@@ -53,6 +64,7 @@ public class Hatch : MonoBehaviour
         yield return new WaitForSeconds(1f);
         cameraHandler.ActivateEndCamera();
         playerController.gameObject.transform.Rotate(0f, 180f, 0f);
+        flash = true;
         playerController.animator.SetTrigger("blinded");
         yield return new WaitForSeconds(4f);
         playerController.IsImmobilized = false;

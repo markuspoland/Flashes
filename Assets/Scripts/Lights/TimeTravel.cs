@@ -12,7 +12,9 @@ public class TimeTravel : MonoBehaviour
     public Light directionalLight;
     public float flashTime;
     public float targetIntensity;
+    public List<GameObject> objToHide;
     float defaultIntensity;
+    
 
     public CinemachineVirtualCamera playerCam;
     float defaultShakeAmplitude = 0f;
@@ -21,6 +23,7 @@ public class TimeTravel : MonoBehaviour
     public PlayerController playerController;
 
     public ScenePostProcess postProcess;
+    public FogHandler fogHandler;
 
     void Start()
     {
@@ -38,34 +41,30 @@ public class TimeTravel : MonoBehaviour
         StartCoroutine(TimeJump());
     }
 
-    IEnumerator TimeJumpAndFall()
+    IEnumerator TimeJumpAndFall(float waitForFlash = 1f)
     {
         playerController.ShowActionCamera();
         playerController.IsImmobilized = true;
+        yield return new WaitForSeconds(waitForFlash);
+        playerAnim.SetTrigger("blinded");
         playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 2f;
+
+        yield return new WaitForSeconds(0.5f);
+
+        postProcess.FadeIn();
 
         yield return new WaitForSeconds(1f);
         
-        if (directionalLight.intensity < targetIntensity)
+        foreach(var obj in objToHide)
         {
-            directionalLight.intensity += flashTime * Time.deltaTime;
-        }
-     
-
-        if (directionalLight.intensity >= targetIntensity)
-        {
-            yield return new WaitForSeconds(0.1f);
-            playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = defaultShakeAmplitude;
-            targetIntensity = defaultIntensity;
-            directionalLight.intensity -= flashTime * Time.deltaTime;
-            
+            obj.SetActive(false);
         }
 
-        if (directionalLight.intensity < defaultIntensity)
-        {
-            directionalLight.intensity = defaultIntensity;
-        }
-       
+        playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = defaultShakeAmplitude;
+        fogHandler.ResetFog();
+        postProcess.FadeOut();
+   
+              
 
     }
 
@@ -84,6 +83,6 @@ public class TimeTravel : MonoBehaviour
     private void RegainMovement()
     {
         //callback action is called from player controller see https://docs.microsoft.com/pl-pl/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-functions
-        playerController.ShowDefaultCamera(4.7f, () => { playerController.IsImmobilized = false; });
+        playerController.ShowDefaultCamera(5.7f, () => { playerController.IsImmobilized = false; });
     }
 }
