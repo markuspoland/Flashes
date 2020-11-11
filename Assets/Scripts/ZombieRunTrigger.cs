@@ -23,5 +23,6 @@ public class ZombieRunTrigger : MonoBehaviour
         cameraHandler.ActivateSourceCamera();
         yield return new WaitForSeconds(2.3f);
         playerController.IsImmobilized = false;
+        Destroy(this);
     }
 }

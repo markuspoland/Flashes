@@ -12,50 +12,30 @@ public class TimeTravelTrigger : MonoBehaviour
     }
 
     public TimeTravelType timeTravelType;
-
-    public float timeToDestroyWhenBlinded = 3f;
-    public float timeToDestroyWhenNothing = 6f;
+    public float flashingTime = 3f;
+    public float regainMovementTime = 6f;
 
     public TimeTravel timeTravel;
-    bool isTravelling = false;
     public Animator playerAnim;
     public List<GameObject> objectsToShow;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (isTravelling)
-        {
-            switch (timeTravelType)
-            {
-                case TimeTravelType.BLINDED:
-                    timeTravel.FlashAndFall();
-                    Destroy(gameObject, timeToDestroyWhenBlinded);
-                    break;
-                case TimeTravelType.NOTHING:
-                    timeTravel.Flash();
-                    Destroy(gameObject, timeToDestroyWhenNothing);
-                    break;
-            }
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            if (timeTravelType == TimeTravelType.BLINDED)
+            switch (timeTravelType)
             {
-                //playerAnim.SetTrigger("blinded");
+                case TimeTravelType.BLINDED:
+                    timeTravel.FlashAndFall(flashingTime, regainMovementTime);
+                    break;
+                case TimeTravelType.NOTHING:
+                    timeTravel.Flash(flashingTime);
+                    break;
             }
-            
-            isTravelling = true;
+
             EnableObjects();
+            Destroy(gameObject);
         }
     }
 

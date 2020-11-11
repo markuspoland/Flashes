@@ -9,8 +9,6 @@ public class CameraHandler : MonoBehaviour
     public CinemachineVirtualCamera targetCam;
     public CinemachineVirtualCamera endCam;
 
-    private int sourceCamPriority;
-
     int activePriority = 11;
     int notActivePriority = 9;
 
