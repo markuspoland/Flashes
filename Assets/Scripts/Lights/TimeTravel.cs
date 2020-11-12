@@ -19,12 +19,18 @@ public class TimeTravel : MonoBehaviour
     public FogHandler fogHandler;
 
     bool flashing = false;
+    bool shouldFall = true;
 
     private void Update()
     {
         if (flashing)
         {
             StartCoroutine(TimeJumpAndFall());
+        }
+
+        if (!shouldFall)
+        {
+            StartCoroutine(TimeJump());
         }
     }
 
@@ -38,7 +44,7 @@ public class TimeTravel : MonoBehaviour
 
     public void Flash(float flashingTime)
     {
-        StartCoroutine(TimeJump());
+        shouldFall = false;
         StartCoroutine(DisableFlashing(flashingTime));
     }
 
@@ -61,7 +67,7 @@ public class TimeTravel : MonoBehaviour
         playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 2f;
 
         yield return new WaitForSeconds(0.5f);
-
+                
         postProcess.FadeIn();
 
         yield return new WaitForSeconds(1f);

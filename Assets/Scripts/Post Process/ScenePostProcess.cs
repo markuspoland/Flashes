@@ -11,7 +11,7 @@ public class ScenePostProcess : MonoBehaviour
     
    
     float defaultExposure = 0f;
-    public float targetExposure = 10f;
+    float targetExposure = 10f;
     float exposureSpeed = 3f;
         
     void Awake()
@@ -73,5 +73,10 @@ public class ScenePostProcess : MonoBehaviour
     public void SetExposureToTarget()
     {
         colorAdjustments.postExposure.value = targetExposure;
+    }
+
+    public void SetTargetExposure()
+    {
+        targetExposure = 10f;
     }
 }

@@ -37,6 +37,7 @@ public class Hatch : MonoBehaviour
             inventory.RemoveItem(item, Inventory.ItemType.KEY);
             ActivateItems();
             playerController.IsImmobilized = true;
+            postProcess.SetTargetExposure();
             cameraHandler.ActivateTargetCamera();
             DeactivateItems();
             StartCoroutine(ResetCamera());
