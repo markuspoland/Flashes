@@ -1,17 +1,26 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System.Linq;
 
 public class Weapon : MonoBehaviour, IPickable
 {
+    public float hitRadius = 0.5f;
+
     PlayerController playerController;
     PlayerCombat playerCombat;
     IInventory inventory;
+    bool hitEnabled = false;
 
     void Start()
     {
         playerController = FindObjectOfType<PlayerController>();
         playerCombat = FindObjectOfType<PlayerCombat>();
         inventory = FindObjectOfType<Inventory>();
+    }
+
+    void FixedUpdate()
+    {
+        TriggerHitColliders(transform.position, hitRadius);
     }
 
     public enum Type
@@ -37,7 +46,7 @@ public class Weapon : MonoBehaviour, IPickable
         TriggerAction("grabFromFloor");
         TriggerAction("equippedAxe");
         StartCoroutine(GrabWeaponFromFloor());
-        playerController.ShowDefaultCamera(2.1f); 
+        playerController.ShowDefaultCamera(2.1f);
         playerCombat.EquippedWeapon = this;
     }
 
@@ -57,5 +66,26 @@ public class Weapon : MonoBehaviour, IPickable
     private void TriggerAction(string action)
     {
         playerController.animator.SetTrigger(action);
+    }
+
+    public void ActivateHitCollider()
+    {
+        hitEnabled = true;
+    }
+
+    void TriggerHitColliders(Vector3 center, float radius)
+    {
+        if (!hitEnabled) return;
+
+        Collider[] hitColliders = Physics.OverlapSphere(center, radius);
+        foreach (var hitCollider in hitColliders)
+        {
+            EnemyAI enemy = hitCollider.gameObject.GetComponent<EnemyAI>();
+            if (enemy != null)
+            {
+                enemy.GetHit();
+            }
+            hitEnabled = false;
+        }
     }
 }

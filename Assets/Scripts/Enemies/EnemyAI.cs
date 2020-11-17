@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -33,12 +34,12 @@ public class EnemyAI : MonoBehaviour
             anim.SetBool("Walk", true);
             navMeshAgent.SetDestination(playerTransform.position);
         }
-        
+
         if (distanceToPlayer > chaseRange)
         {
             anim.SetBool("Walk", false);
         }
-        
+
     }
 
     void AttackPlayer()
@@ -47,6 +48,11 @@ public class EnemyAI : MonoBehaviour
         {
             anim.SetBool("Attacking", true);
         }
+    }
+
+    public void GetHit()
+    {
+        anim.SetTrigger("hit1");
     }
 
     //private void OnDrawGizmosSelected()
