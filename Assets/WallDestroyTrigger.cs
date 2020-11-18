@@ -30,6 +30,7 @@ public class WallDestroyTrigger : MonoBehaviour
         cameraHandler.ActivateTargetCamera();
         yield return new WaitForSeconds(2f);
         cameraHandler.ActivateSourceCamera();
+        playerController.ShowDefaultCamera(0f);
         playerController.IsImmobilized = false;
         Destroy(gameObject);
     }

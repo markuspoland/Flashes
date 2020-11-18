@@ -19,9 +19,10 @@ public class EnemyHandAttack : MonoBehaviour
 
     private IEnumerator PlayerGotHit()
     {
-        cameraHandler.ActivateTargetCamera();
+        playerController.ShowActionCamera();
         playerController.animator.SetTrigger("hit1");
-        yield return new WaitForSeconds(1f);
-        cameraHandler.ActivateSourceCamera();
+        
+        playerController.ShowDefaultCamera(1f);
+        yield return null;
     }
 }
