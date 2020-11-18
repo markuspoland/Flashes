@@ -19179,7 +19179,9 @@ MonoBehaviour:
   chaseRange: 10
   playerTransform: {fileID: 5980089587742581224}
   bloodPos: {fileID: 377068164}
+  anim: {fileID: 0}
   isHit: 0
+  IsKilled: 0
   hitBlood: {fileID: 8300000, guid: f05fc79d725becf4198281b31329e72d, type: 3}
   getHit: {fileID: 8300000, guid: be6bbb818e74a5840969e49519bdb439, type: 3}
 --- !u!82 &1252464405
@@ -19278,6 +19280,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1252464406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252464399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ec9e100676fb1459ff6d4e58d1bd68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  maxHealth: 200
 --- !u!1001 &1266803312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61116,6 +61132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 5980089587754560203}
   cameraHandler: {fileID: 1702425357}
+  onHitDamage: 20
 --- !u!114 &1702425357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62632,7 +62649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239497945300071444, guid: 2282d8a6f0e8dbe45a738936781909c2, type: 3}
       propertyPath: hitRadius
-      value: 0.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6239497945300071444, guid: 2282d8a6f0e8dbe45a738936781909c2, type: 3}
       propertyPath: bloodFX
@@ -67276,6 +67293,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5980089587743014351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980089587743014344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78a8d6d09cba3ba49b98ed63890b8554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
 --- !u!95 &5980089587752390156 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4163643807876204351, guid: c276734296337ed46b432336d64ec83d, type: 3}

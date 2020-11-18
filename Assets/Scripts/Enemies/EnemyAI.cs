@@ -10,11 +10,14 @@ public class EnemyAI : MonoBehaviour
     public float chaseRange = 10f;
     public Transform playerTransform;
     public Transform bloodPos;
-    Animator anim;
+    [HideInInspector]
+    public Animator anim;
 
     public bool isHit = false;
+    public bool IsKilled = false;
 
     AudioSource audioSource;
+    EnemyHealth enemyHealth;
     public AudioClip hitBlood;
     public AudioClip getHit;
 
@@ -24,11 +27,13 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (IsKilled) return;
         distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
         
         if (!IsHit())
@@ -41,8 +46,6 @@ public class EnemyAI : MonoBehaviour
             StartCoroutine(StopChasingTemporarily(1.5f));
         }
         AttackPlayer();
-
-        Debug.Log("Hit? " + isHit);
     }
 
     void ChasePlayer()
@@ -70,8 +73,10 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    public void GetHit()
+    public void GetHit(float damage)
     {
+        if (IsKilled) return;
+        enemyHealth.TakeDamage(damage);
         anim.SetTrigger("hit1");
         audioSource.PlayOneShot(hitBlood);
         audioSource.PlayOneShot(getHit);

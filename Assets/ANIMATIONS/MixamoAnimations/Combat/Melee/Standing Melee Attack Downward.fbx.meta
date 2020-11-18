@@ -66,7 +66,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.48387098
+      - time: 0.36602587
         functionName: DisableWeaponAttack
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: ef91872b7b44fa84a9b7a04ef9435eb9, type: 3}

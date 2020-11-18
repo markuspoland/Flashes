@@ -15,11 +15,14 @@ public class PlayerController : MonoBehaviour
     public bool IsImmobilized = false;
 
     [HideInInspector]
+    public PlayerHealth playerHealth;
+    [HideInInspector]
     public Animator animator;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     public bool ControlsLock()

@@ -15,11 +15,11 @@ public class PlayerAttack : MonoBehaviour
     public void EnableWeaponAttack()
     {
         playerWeapon = playerCombat.EquippedWeapon;
-        playerWeapon.ActivateHitCollider();
+        playerWeapon.ActivateHitCollider(true);
     }
 
     public void DisableWeaponAttack()
     {
-        playerWeapon.ActivateHitCollider();
+        playerWeapon.ActivateHitCollider(false);
     }
 }

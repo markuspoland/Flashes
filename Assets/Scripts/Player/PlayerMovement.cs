@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
         {
             playerController.IsKilled = true;
             playerController.ShowActionCamera();
-            playerController.actionCam.Priority = 11;
             playerController.animator.SetBool("killed", true);
         }
     }

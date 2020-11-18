@@ -25,7 +25,7 @@ public class Weapon : MonoBehaviour, IPickable
         inventory = FindObjectOfType<Inventory>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         TriggerHitColliders(transform.position, hitRadius);
     }
@@ -35,6 +35,8 @@ public class Weapon : MonoBehaviour, IPickable
         MELEE,
         RANGED
     }
+
+    public float damageOnHit = 50f;
 
     public Vector3 InHandPosition = new Vector3();
     public Vector3 InHandRotation = new Vector3();
@@ -75,9 +77,9 @@ public class Weapon : MonoBehaviour, IPickable
         playerController.animator.SetTrigger(action);
     }
 
-    public void ActivateHitCollider()
+    public void ActivateHitCollider(bool active)
     {
-        hitEnabled = true;
+        hitEnabled = active;
     }
 
     void TriggerHitColliders(Vector3 center, float radius)
@@ -92,9 +94,10 @@ public class Weapon : MonoBehaviour, IPickable
             {
                 enemy.isHit = true;
                 Instantiate(bloodFX, enemy.bloodPos.position, enemy.bloodPos.rotation);
-                enemy.GetHit();
+                enemy.GetHit(damageOnHit);
+                hitEnabled = false;
+                return;
             }
-            hitEnabled = false;
         }
     }
 
