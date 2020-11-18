@@ -6,10 +6,12 @@ using UnityEngine;
 public class DestroyWall : MonoBehaviour
 {
     Rigidbody[] bricks;
+    AudioSource audioSource;
+    public AudioClip wallClip;
 
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class DestroyWall : MonoBehaviour
 
     public void WallDestroy()
     {
+        audioSource.PlayOneShot(wallClip);
         bricks = GetComponentsInChildren<Rigidbody>();
         foreach (Rigidbody brick in bricks)
         {

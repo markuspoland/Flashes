@@ -6,13 +6,20 @@ public class Weapon : MonoBehaviour, IPickable
 {
     public float hitRadius = 0.5f;
 
+    public GameObject bloodFX;
+
     PlayerController playerController;
     PlayerCombat playerCombat;
     IInventory inventory;
     bool hitEnabled = false;
 
+    AudioSource audioSource;
+    public AudioClip axeSwipe;
+
+    
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         playerController = FindObjectOfType<PlayerController>();
         playerCombat = FindObjectOfType<PlayerCombat>();
         inventory = FindObjectOfType<Inventory>();
@@ -83,9 +90,21 @@ public class Weapon : MonoBehaviour, IPickable
             EnemyAI enemy = hitCollider.gameObject.GetComponent<EnemyAI>();
             if (enemy != null)
             {
+                enemy.isHit = true;
+                Instantiate(bloodFX, enemy.bloodPos.position, enemy.bloodPos.rotation);
                 enemy.GetHit();
             }
             hitEnabled = false;
         }
+    }
+
+    public void PlaySwipeAudio()
+    {
+        Invoke("Swipe", 0.5f);
+    }
+
+    void Swipe()
+    {
+        audioSource.PlayOneShot(axeSwipe);
     }
 }

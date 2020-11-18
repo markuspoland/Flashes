@@ -12,8 +12,12 @@ public class PlayerCombat : MonoBehaviour
 
     private PlayerController playerController;
 
+    AudioSource audioSource;
+    public AudioClip[] attackSounds;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         playerController = GetComponent<PlayerController>();
     }
 
@@ -32,6 +36,8 @@ public class PlayerCombat : MonoBehaviour
             {
                 if (EquippedWeapon.WeaponType == Weapon.Type.MELEE && attackCooldownTimer >= attackCooldown)
                 {
+                    EquippedWeapon.PlaySwipeAudio();
+                    PlayAttackSound();
                     playerController.ShowActionCamera();
                     playerController.animator.SetTrigger("attackAxe");
                     playerController.ShowDefaultCamera(0.9f);
@@ -65,5 +71,11 @@ public class PlayerCombat : MonoBehaviour
     private void TriggerAction(string action)
     {
         playerController.animator.SetTrigger(action);
+    }
+
+    void PlayAttackSound()
+    {
+        int randomSound = Random.Range(0, 4);
+        audioSource.PlayOneShot(attackSounds[randomSound]);
     }
 }
