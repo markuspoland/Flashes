@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hatch : MonoBehaviour
 {
@@ -69,6 +70,6 @@ public class Hatch : MonoBehaviour
         playerController.animator.SetTrigger("blinded");
         yield return new WaitForSeconds(4f);
         playerController.IsImmobilized = false;
-        cameraHandler.ActivateSourceCamera();
+        SceneManager.LoadScene(2);
     }
 }
