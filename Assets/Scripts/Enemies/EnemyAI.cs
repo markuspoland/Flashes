@@ -56,11 +56,13 @@ public class EnemyAI : MonoBehaviour
             anim.SetBool("Attacking", false);
             anim.SetBool("Walk", true);
             navMeshAgent.SetDestination(playerTransform.position);
+            navMeshAgent.isStopped = false;
         }
 
         if (distanceToPlayer > chaseRange)
         {
             anim.SetBool("Walk", false);
+            navMeshAgent.isStopped = true;
         }
 
     }
