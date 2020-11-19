@@ -7,12 +7,18 @@ public class EnemyHealth : MonoBehaviour
     public float health = 300f;
     [SerializeField]
     float maxHealth = 300f;
+    CapsuleCollider capsuleCollider;
 
     EnemyAI enemy;
+
+    AudioSource audioSource;
+    public AudioClip deathSound;
 
     private void Start()
     {
         enemy = GetComponent<EnemyAI>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void TakeDamage(float damage)
@@ -34,6 +40,8 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         enemy.IsKilled = true;
+        audioSource.PlayOneShot(deathSound);
         enemy.anim.SetBool("killed", true);
+        capsuleCollider.enabled = false;
     }
 }

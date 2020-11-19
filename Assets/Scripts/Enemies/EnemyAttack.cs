@@ -6,15 +6,16 @@ public class EnemyAttack : MonoBehaviour
 {
 
     public GameObject rightHand;
+    EnemyAI enemy;
 
     void Start()
     {
-        
+        enemy = GetComponent<EnemyAI>();
     }
 
     public void EnableRightHandAttack()
     {
-        rightHand.SetActive(true);
+       if (!enemy.IsKilled) rightHand.SetActive(true);
     }
 
     public void DisableRightHandAttack()
