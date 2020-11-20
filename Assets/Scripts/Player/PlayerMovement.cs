@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 move;
     public CharacterController controller;
 
-    public float speed = 12f;
+    public float speed = 3f;
+    public float sprintSpeed = 6f;
     public float gravity = -9.81f;
 
     Vector3 velocity;
@@ -72,8 +73,10 @@ public class PlayerMovement : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         z = Input.GetAxis("Vertical");
 
+        float playerSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : speed;
+
         move = transform.right * x + transform.forward * z;
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * playerSpeed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);

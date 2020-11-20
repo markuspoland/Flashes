@@ -9,6 +9,13 @@ public class EnemyHandAttack : MonoBehaviour
     public CameraHandler cameraHandler;
     public float onHitDamage = 15;
 
+    EnemyAI enemy;
+
+    private void Start()
+    {
+        enemy = GetComponent<EnemyAI>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -19,7 +26,7 @@ public class EnemyHandAttack : MonoBehaviour
 
     private void PlayerGotHit()
     {
-        if (playerController.IsKilled) return;
+        if (playerController.IsKilled || enemy.IsKilled) return;
         playerController.ShowActionCamera();
         playerController.animator.SetTrigger("hit1");
         playerController.playerHealth.TakeDamage(onHitDamage);
