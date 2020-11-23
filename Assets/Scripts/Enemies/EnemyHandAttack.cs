@@ -13,7 +13,7 @@ public class EnemyHandAttack : MonoBehaviour
 
     private void Start()
     {
-        enemy = GetComponent<EnemyAI>();
+        enemy = gameObject.GetComponentInParent<EnemyAI>();
     }
 
     private void OnTriggerEnter(Collider other)
