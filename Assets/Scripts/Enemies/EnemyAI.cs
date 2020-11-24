@@ -6,7 +6,6 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    NavMeshAgent navMeshAgent;
     public float chaseRange = 10f;
     public Transform playerTransform;
     public Transform bloodPos;
@@ -16,10 +15,12 @@ public class EnemyAI : MonoBehaviour
     public bool isHit = false;
     public bool IsKilled = false;
 
-    AudioSource audioSource;
-    EnemyHealth enemyHealth;
     public AudioClip hitBlood;
     public AudioClip getHit;
+
+    AudioSource audioSource;
+    EnemyHealth enemyHealth;
+    NavMeshAgent navMeshAgent;
 
     float distanceToPlayer = Mathf.Infinity;
     void Start()
@@ -33,7 +34,7 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsKilled) return;
+        if (IsKilled || !navMeshAgent.enabled) return;
         distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
         
         if (!IsHit())
@@ -73,6 +74,11 @@ public class EnemyAI : MonoBehaviour
         {
             anim.SetBool("Attacking", true);
         }
+    }
+
+    public void EnableNavMesh()
+    {
+        navMeshAgent.enabled = true;
     }
 
     public void GetHit(float damage)

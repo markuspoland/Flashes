@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,8 +12,15 @@ public class CaveZombieTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            enemy.anim.SetTrigger("getup");
-            Destroy(gameObject);
+            StartCoroutine(EnableEnemy());
         }
+    }
+
+    private IEnumerator EnableEnemy()
+    {
+        enemy.anim.SetTrigger("getup");
+        yield return new WaitForSeconds(5.15f);
+        enemy.EnableNavMesh();
+        Destroy(gameObject);
     }
 }
