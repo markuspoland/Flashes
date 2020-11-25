@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1554564008952468435}
-  - component: {fileID: 6239497945300071443}
   - component: {fileID: 6239497945300071444}
   - component: {fileID: 6239497945300071441}
+  - component: {fileID: 4365114372730654832}
+  - component: {fileID: 5782232594007219650}
+  - component: {fileID: 1236231666311998724}
   m_Layer: 0
   m_Name: Melee Axe
   m_TagString: Untagged
@@ -28,25 +30,12 @@ Transform:
   m_GameObject: {fileID: 3778792537295106655}
   m_LocalRotation: {x: -0.66946995, y: -0.22761808, z: -0.22761804, w: 0.66946995}
   m_LocalPosition: {x: 241.838, y: 7.0559616, z: 122.773}
-  m_LocalScale: {x: 0.007, y: 0.007, z: 0.007}
+  m_LocalScale: {x: 0.010299101, y: 0.010299101, z: 0.010299101}
   m_Children:
   - {fileID: 7626199738965119775}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -37.556004}
---- !u!65 &6239497945300071443
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778792537295106655}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 180.9, y: 141.1, z: 128}
-  m_Center: {x: 20, y: 6.7, z: 15.74}
 --- !u!114 &6239497945300071444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,8 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a968e88782ae98498531df5f26d4bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPosition: {x: -0.091, y: -0.01, z: -0.044}
-  CustomRotation: {x: -156.088, y: -12.29999, z: -107.491}
+  hitRadius: 1.5
+  bloodFX: {fileID: 7699148042592908837, guid: 662523f4bcca9cf43a24efde7a1603e3, type: 3}
+  axeSwipe: {fileID: 8300000, guid: 6914236e139fad44290919aedcb685f4, type: 3}
+  damageOnHit: 50
+  InHandPosition: {x: -0.117, y: 0.007, z: -0.033}
+  InHandRotation: {x: -20.486, y: 174.582, z: 69.818}
   WeaponType: 0
 --- !u!114 &6239497945300071441
 MonoBehaviour:
@@ -74,8 +67,134 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd4a91da09e41d4cb0a3d94eab98a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visibilityRadius: 5
+  interactionRadius: 2.5
+  visibilityRadius: 8
   interactionEnabled: 1
+--- !u!65 &4365114372730654832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778792537295106655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.499983, y: 127.546524, z: 15.099999}
+  m_Center: {x: 42.69877, y: -74.088524, z: 3.2}
+--- !u!82 &5782232594007219650
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778792537295106655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1236231666311998724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778792537295106655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be41b647068e92b4d9ffbeb8957a4df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: 
+  hintLabel: {fileID: 0}
+  objectsToShow: []
+  key: {fileID: 0}
 --- !u!1 &7629034238530039411
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,6 +250,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -155,3 +275,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

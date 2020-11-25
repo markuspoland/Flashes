@@ -6,16 +6,6 @@ public class ZombieVillageTrigger : MonoBehaviour
 {
     public GameObject zombie;
     public GameObject timeTravelTrigger;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +16,4 @@ public class ZombieVillageTrigger : MonoBehaviour
             Destroy(gameObject, 0.3f);
         }
     }
-
-
 }

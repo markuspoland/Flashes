@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections;
+using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
@@ -22,8 +24,15 @@ public class InteractibleObject : MonoBehaviour
         render = gameObject.GetComponentsInChildren<Renderer>().First();
         player = FindObjectOfType<PlayerController>().gameObject;
 
-        var indidatorPrefabFar = Resources.Load("prefabs/Canvas/IndicatorFar");
-        var indidatorPrefabClose = Resources.Load("prefabs/Canvas/IndicatorClose");
+        StartCoroutine(InstantiateIndicator());
+    }
+
+    private IEnumerator InstantiateIndicator()
+    {
+        //a small amount of waiting time is needed due to isues whith scene change
+        yield return new WaitForSeconds(1f);
+        var indidatorPrefabFar = Resources.Load("Prefabs/Canvas/IndicatorFar");
+        var indidatorPrefabClose = Resources.Load("Prefabs/Canvas/IndicatorClose");
 
         indicatorFar = (GameObject)Instantiate(indidatorPrefabFar);
         indicatorFar.SetActive(false);
@@ -36,6 +45,8 @@ public class InteractibleObject : MonoBehaviour
 
     void Update()
     {
+        if (!IsIndicatorInstantiated()) return;
+
         playerPosition = player.transform.position;
         distance = Vector3.Distance(playerPosition, transform.position);
 
@@ -63,12 +74,20 @@ public class InteractibleObject : MonoBehaviour
 
     public void Disable()
     {
-        indicatorClose.SetActive(false);
-        indicatorFar.SetActive(false);
+        if (IsIndicatorInstantiated())
+        {
+            indicatorClose.SetActive(false);
+            indicatorFar.SetActive(false);
+        }
+     
         interactionEnabled = false;
     }
 
-    public bool CanInteract() => distance < interactionRadius && interactionEnabled && indicatorClose.activeSelf;
+    private bool IsIndicatorInstantiated() => indicatorFar != null && indicatorClose != null;
+
+    public bool CanInteract() => distance < interactionRadius && interactionEnabled && IsCloseIndicatorActive();
+
+    private bool IsCloseIndicatorActive() => IsIndicatorInstantiated() && indicatorClose.activeSelf;
 
     // It check all cameras. Editor camera too!. So be careful while testing shit ;)
     private bool IsVisibleToPlayer() => render.isVisible;

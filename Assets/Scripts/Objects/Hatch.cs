@@ -69,7 +69,6 @@ public class Hatch : MonoBehaviour
         flash = true;
         playerController.animator.SetTrigger("blinded");
         yield return new WaitForSeconds(2f);
-        //playerController.IsImmobilized = false;
         SceneManager.LoadScene(2);
     }
 }
