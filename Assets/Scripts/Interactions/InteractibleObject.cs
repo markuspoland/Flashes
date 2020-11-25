@@ -16,11 +16,12 @@ public class InteractibleObject : MonoBehaviour
     private Vector3 worldToScreenPoint;
     private Renderer render;
 
-
+    
     void Start()
     {
         render = gameObject.GetComponentsInChildren<Renderer>().First();
         player = FindObjectOfType<PlayerController>().gameObject;
+
         var indidatorPrefabFar = Resources.Load("prefabs/Canvas/IndicatorFar");
         var indidatorPrefabClose = Resources.Load("prefabs/Canvas/IndicatorClose");
 

@@ -27,6 +27,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (playerController.ControlsLock())
+        {
+            playerController.animator.SetFloat("velX", 0);
+            playerController.animator.SetFloat("velY", 0);
+        }        
         //Press K to kill yourself or L to resurrect for testing purposes
         AnimateDying();
         AnimateResurrection();
@@ -70,8 +75,10 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        x = Input.GetAxis("Horizontal");
-        z = Input.GetAxis("Vertical");
+        
+            x = Input.GetAxis("Horizontal");
+            z = Input.GetAxis("Vertical");             
+       
 
         float playerSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : speed;
 

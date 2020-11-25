@@ -68,8 +68,8 @@ public class Hatch : MonoBehaviour
         playerController.gameObject.transform.Rotate(0f, 180f, 0f);
         flash = true;
         playerController.animator.SetTrigger("blinded");
-        yield return new WaitForSeconds(4f);
-        playerController.IsImmobilized = false;
+        yield return new WaitForSeconds(2f);
+        //playerController.IsImmobilized = false;
         SceneManager.LoadScene(2);
     }
 }

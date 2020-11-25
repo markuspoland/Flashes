@@ -23,7 +23,7 @@ public class ZombieVillageTrigger : MonoBehaviour
         {
             zombie.SetActive(true);
             timeTravelTrigger.SetActive(true);
-            Destroy(this, 0.3f);
+            Destroy(gameObject, 0.3f);
         }
     }
 
