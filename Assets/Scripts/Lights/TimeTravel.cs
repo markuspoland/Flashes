@@ -18,8 +18,18 @@ public class TimeTravel : MonoBehaviour
     public ScenePostProcess postProcess;
     public FogHandler fogHandler;
 
+    public AudioClip timeJumpFull;
+
+    AudioSource audioSource;
+
     bool flashing = false;
     bool shouldFall = true;
+    bool hasPlayed = false;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -67,7 +77,14 @@ public class TimeTravel : MonoBehaviour
         playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 2f;
 
         yield return new WaitForSeconds(0.5f);
-                
+
+        if (!hasPlayed)
+        {
+            audioSource.PlayOneShot(timeJumpFull);
+            hasPlayed = true;
+        }
+        
+
         postProcess.FadeIn();
 
         yield return new WaitForSeconds(1f);
@@ -80,6 +97,7 @@ public class TimeTravel : MonoBehaviour
         playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = defaultShakeAmplitude;
         fogHandler.ResetFog();
         postProcess.FadeOut();
+        
     }
 
     IEnumerator TimeJump()
