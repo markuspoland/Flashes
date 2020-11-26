@@ -15,16 +15,31 @@ MonoBehaviour:
   surfaces:
   - name: STONE
     soundEffects:
-    - {fileID: 8300000, guid: 7eef3c19548ace64ab38167d3f075fed, type: 3}
-    - {fileID: 8300000, guid: 7eef3c19548ace64ab38167d3f075fed, type: 3}
-    - {fileID: 8300000, guid: 7eef3c19548ace64ab38167d3f075fed, type: 3}
+    - {fileID: 8300000, guid: 12830f72895a5a74b8127c468a8cf99c, type: 3}
+    - {fileID: 8300000, guid: 8522172cf7eb04845bcec30146b577b8, type: 3}
+    - {fileID: 8300000, guid: 1e203569a058f9c43ba63e154ce30ccc, type: 3}
+    - {fileID: 8300000, guid: 5663f05e69d3daf439a7559c2695c325, type: 3}
+    - {fileID: 8300000, guid: 6d908b9c64e724c42a3e3f92ab9e4caa, type: 3}
+    - {fileID: 8300000, guid: 755a24801241ffa46b5d6b74644b7ed5, type: 3}
   - name: MOSS
     soundEffects:
-    - {fileID: 8300000, guid: 34070d65b8396a44aaa2b268cc4e7858, type: 3}
-    - {fileID: 8300000, guid: 34070d65b8396a44aaa2b268cc4e7858, type: 3}
-    - {fileID: 8300000, guid: 34070d65b8396a44aaa2b268cc4e7858, type: 3}
+    - {fileID: 8300000, guid: 2cea7cb7e644c0a4a80ac024fd03a103, type: 3}
+    - {fileID: 8300000, guid: 29807f5818f69124999e8ca3f4b12192, type: 3}
+    - {fileID: 8300000, guid: da48cd7d3bdc3604296df7a1b793b681, type: 3}
+    - {fileID: 8300000, guid: e57637dfb854b2140afa1307922f0a23, type: 3}
   - name: SOIL
     soundEffects:
-    - {fileID: 8300000, guid: 01e76912db5453643967544866e2e64b, type: 3}
-    - {fileID: 8300000, guid: 01e76912db5453643967544866e2e64b, type: 3}
-    - {fileID: 8300000, guid: 01e76912db5453643967544866e2e64b, type: 3}
+    - {fileID: 8300000, guid: dd338159e05accc4b9c6bd2c495d58fb, type: 3}
+    - {fileID: 8300000, guid: 0cecda245185dc8438c4cd550def02cf, type: 3}
+    - {fileID: 8300000, guid: 1b35cd4b7d8f772478abb33b85db637b, type: 3}
+    - {fileID: 8300000, guid: 1961491ce50397648abffc6214f9734c, type: 3}
+    - {fileID: 8300000, guid: fce4a96567c0ef34da5495eab5eb9c93, type: 3}
+    - {fileID: 8300000, guid: 0df33fa26c549334aae3f0ac541e0679, type: 3}
+  - name: WOOD
+    soundEffects:
+    - {fileID: 8300000, guid: 5f6ff6e3f1e77a84b8de9324087757aa, type: 3}
+    - {fileID: 8300000, guid: 2e2d248ad17f1df4e9618fb158ab42b6, type: 3}
+    - {fileID: 8300000, guid: 8e8623f6b80e22b4c88840908cf54f34, type: 3}
+    - {fileID: 8300000, guid: fbc3e50d78e78eb428f31864b53e5d6c, type: 3}
+    - {fileID: 8300000, guid: a338e318f8d4b1c40a60d65fbae7f3b1, type: 3}
+    - {fileID: 8300000, guid: 69140597995c7e4438dc83a78f618832, type: 3}
