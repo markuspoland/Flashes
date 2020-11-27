@@ -37,6 +37,5 @@ public class PlayerHealth : MonoBehaviour
         playerController.IsKilled = true;
         playerController.ShowActionCamera();
         playerController.animator.SetBool("killed", true);
-        //TODO show die screen
     }
 }

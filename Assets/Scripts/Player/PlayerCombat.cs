@@ -14,6 +14,9 @@ public class PlayerCombat : MonoBehaviour
 
     AudioSource audioSource;
     public AudioClip[] attackSounds;
+    public AudioClip[] painSounds;
+    public AudioClip hitSound;
+    public AudioClip dyingSound;
 
     private void Start()
     {
@@ -75,7 +78,24 @@ public class PlayerCombat : MonoBehaviour
 
     void PlayAttackSound()
     {
-        int randomSound = Random.Range(0, 4);
+        int randomSound = Random.Range(0, attackSounds.Length - 1);
         audioSource.PlayOneShot(attackSounds[randomSound]);
+    }
+
+    public void PlayPainSound()
+    {
+        if (playerController.IsKilled) return;
+        int randomSound = Random.Range(0, painSounds.Length - 1);
+        audioSource.PlayOneShot(painSounds[randomSound]);
+    }
+
+    public void PlayDyingSound()
+    {
+        audioSource.PlayOneShot(dyingSound);
+    }
+
+    public void PlayHitSound()
+    {
+        audioSource.PlayOneShot(hitSound);
     }
 }
