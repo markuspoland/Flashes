@@ -36,6 +36,6 @@ public class PlayerHealth : MonoBehaviour
     {
         playerController.IsKilled = true;
         playerController.ShowActionCamera();
-        playerController.animator.SetBool("killed", true);
+        playerController.animator.SetTrigger("death");
     }
 }

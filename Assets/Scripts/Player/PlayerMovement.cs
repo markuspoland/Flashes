@@ -32,36 +32,8 @@ public class PlayerMovement : MonoBehaviour
             playerController.animator.SetFloat("velX", 0);
             playerController.animator.SetFloat("velY", 0);
         }        
-        //Press K to kill yourself or L to resurrect for testing purposes
-        AnimateDying();
-        AnimateResurrection();
+
         AnimateMovement();
-    }
-
-    private void AnimateDying()
-    {
-        if (playerController.IsKilled || playerController.IsResurrecting || playerController.IsImmobilized) return;
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            playerController.IsKilled = true;
-            playerController.ShowActionCamera();
-            playerController.animator.SetBool("killed", true);
-        }
-    }
-
-    private void AnimateResurrection()
-    {
-        if (!playerController.IsKilled || playerController.IsResurrecting || playerController.IsImmobilized) return;
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            playerController.IsKilled = false;
-            playerController.IsResurrecting = true;
-            //callback action is called from player controller
-            playerController.ShowDefaultCamera(3.1f, delegate { playerController.IsResurrecting = false; });
-            playerController.animator.SetBool("killed", false);
-        }
     }
 
     private void AnimateMovement()
