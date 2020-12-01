@@ -17,6 +17,7 @@ public class EnemyAI : MonoBehaviour
 
     public AudioClip hitBlood;
     public AudioClip getHit;
+    public AudioClip[] footsteps;
 
     AudioSource audioSource;
     EnemyHealth enemyHealth;
@@ -36,11 +37,11 @@ public class EnemyAI : MonoBehaviour
     {
         if (IsKilled || !navMeshAgent.enabled) return;
         distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
-        
+
         if (!IsHit())
         {
-           ChasePlayer();         
-        } 
+            ChasePlayer();
+        }
 
         if (IsHit())
         {
@@ -51,7 +52,7 @@ public class EnemyAI : MonoBehaviour
 
     void ChasePlayer()
     {
-        
+
         if (distanceToPlayer <= chaseRange)
         {
             anim.SetBool("Attacking", false);
@@ -103,9 +104,8 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent.isStopped = false;
     }
 
-    //private void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawWireSphere(transform.position, chaseRange);
-    //}
+    public void PlayFootstep(int foot)
+    {
+        audioSource.PlayOneShot(footsteps[foot], 0.5f);
+    }
 }

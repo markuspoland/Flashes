@@ -8,6 +8,7 @@ public class WallDestroyTrigger : MonoBehaviour
     public Animator playerAnim;
     public PlayerController playerController;
     public GameObject monster;
+    public EnemyAI monsterAI;
     public CameraHandler cameraHandler;
 
     private void OnTriggerEnter(Collider other)
@@ -30,8 +31,9 @@ public class WallDestroyTrigger : MonoBehaviour
         cameraHandler.ActivateTargetCamera();
         yield return new WaitForSeconds(2f);
         cameraHandler.ActivateSourceCamera();
-        playerController.ShowDefaultCamera(0f);
+        playerController.ShowDefaultCamera();
         playerController.IsImmobilized = false;
+        monsterAI.EnableNavMesh();
         Destroy(gameObject);
     }
 }

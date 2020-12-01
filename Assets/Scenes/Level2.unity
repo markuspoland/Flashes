@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.0053350367, g: 0.0108699575, b: 0.024712311, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27386,7 +27386,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252464399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3
@@ -27434,6 +27434,9 @@ MonoBehaviour:
   IsKilled: 0
   hitBlood: {fileID: 8300000, guid: f05fc79d725becf4198281b31329e72d, type: 3}
   getHit: {fileID: 8300000, guid: be6bbb818e74a5840969e49519bdb439, type: 3}
+  footsteps:
+  - {fileID: 8300000, guid: e8c7dfbaaa554b64489e70329e59e098, type: 3}
+  - {fileID: 8300000, guid: 872ab5f4bf5bc26499ca9e2580558f7f, type: 3}
 --- !u!82 &1252464405
 AudioSource:
   m_ObjectHideFlags: 0
@@ -70208,6 +70211,7 @@ MonoBehaviour:
   playerAnim: {fileID: 5980089587752390156}
   playerController: {fileID: 5980089587754560203}
   monster: {fileID: 658013767}
+  monsterAI: {fileID: 1252464404}
   cameraHandler: {fileID: 1651427871}
 --- !u!114 &1651427871
 MonoBehaviour:
@@ -74899,6 +74903,7 @@ MonoBehaviour:
   IsKilled: 0
   hitBlood: {fileID: 8300000, guid: f05fc79d725becf4198281b31329e72d, type: 3}
   getHit: {fileID: 8300000, guid: b1cb565c2f68c1347b53a25fdc60cfbe, type: 3}
+  footsteps: []
 --- !u!1001 &1895297434
 PrefabInstance:
   m_ObjectHideFlags: 0
