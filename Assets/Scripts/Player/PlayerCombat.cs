@@ -85,8 +85,14 @@ public class PlayerCombat : MonoBehaviour
     public void PlayPainSound()
     {
         if (playerController.IsKilled) return;
-        int randomSound = Random.Range(0, painSounds.Length - 1);
-        audioSource.PlayOneShot(painSounds[randomSound]);
+
+        if (gameObject.CompareTag("Player"))
+        {
+            int randomSound = Random.Range(0, painSounds.Length - 1);
+            audioSource.PlayOneShot(painSounds[randomSound]);
+        }
+        
+        
     }
 
     public void PlayDyingSound()

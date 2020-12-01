@@ -40,6 +40,7 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         enemy.IsKilled = true;
+        audioSource.Stop();
         audioSource.PlayOneShot(deathSound);
         enemy.anim.SetBool("killed", true);
         capsuleCollider.enabled = false;
