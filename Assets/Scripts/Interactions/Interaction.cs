@@ -10,6 +10,11 @@ public class Interaction : MonoBehaviour
     public List<GameObject> objectsToShow;
     public Key key;
     public IPickable pickable;
+    public AudioClip pickupSound;
+    public AudioClip cantInteractSound;
+    public AudioClip interactSound;
+
+    AudioSource audioSource;
 
     private InteractibleObject interactible;
     private bool aleadyInteracted = false;
@@ -18,6 +23,7 @@ public class Interaction : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         interactible = GetComponent<InteractibleObject>();
         pickable = GetComponent<IPickable>();
         inventory = FindObjectOfType<Inventory>();
@@ -29,6 +35,7 @@ public class Interaction : MonoBehaviour
         {
             if (pickable != null)
             {
+                audioSource.PlayOneShot(pickupSound);
                 interactible.Disable();
                 pickable.PickUp();
                 aleadyInteracted = true;
@@ -60,6 +67,7 @@ public class Interaction : MonoBehaviour
     private void FirstStep()
     {
         hintLabel.ShowHint(hint);
+        audioSource.PlayOneShot(cantInteractSound);
         if (!aleadyInteracted)
         {
             EnableObjects();
@@ -70,6 +78,7 @@ public class Interaction : MonoBehaviour
     {
         if (!aleadyKeyUsed)
         {
+            audioSource.PlayOneShot(interactSound);
             interactible.Disable();
             key.UseKey();
             aleadyKeyUsed = true;

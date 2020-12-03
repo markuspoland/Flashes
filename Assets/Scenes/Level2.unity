@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0053350367, g: 0.0108699575, b: 0.024712311, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2644,7 +2644,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73416
+  m_Name: pb_Mesh22216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9889,7 +9889,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74286
+  m_Name: pb_Mesh23126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19684,7 +19684,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73212
+  m_Name: pb_Mesh22008
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27659,7 +27659,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh72866
+  m_Name: pb_Mesh21630
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28129,7 +28129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73844
+  m_Name: pb_Mesh22660
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -74708,6 +74708,14 @@ PrefabInstance:
     - target: {fileID: 407552, guid: 9376368eef23b13469fbc195a99da385, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0140771
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307754, guid: 9376368eef23b13469fbc195a99da385, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307754, guid: 9376368eef23b13469fbc195a99da385, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9376368eef23b13469fbc195a99da385, type: 3}

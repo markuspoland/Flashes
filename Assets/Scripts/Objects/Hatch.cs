@@ -18,7 +18,6 @@ public class Hatch : MonoBehaviour
 
     private void Start()
     {
-        
         inventory = FindObjectOfType<Inventory>();
     }
 
