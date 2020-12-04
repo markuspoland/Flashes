@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     
     void Start()
     {
-        Invoke("PlayTimeJumpHalfTwo", 0.1f);
+        //Invoke("PlayTimeJumpHalfTwo", 0.1f);
         postProcess.SetExposureToTarget();
     }
 
@@ -39,6 +39,6 @@ public class LevelManager : MonoBehaviour
 
     void PlayTimeJumpHalfTwo()
     {
-        timeTravel.PlayTimeJumpHalfTwo();
+        //timeTravel.PlayTimeJumpHalfTwo();
     }
 }
