@@ -8,7 +8,7 @@ public class FogHandler : MonoBehaviour
 {
     VolumeProfile fogVolumeProfile;
     Fog fog;
-    float defaultFogVolume = 12.33f;
+    float defaultFogVolume = 11.9f;
     public float targetFogVolume;
 
     // Start is called before the first frame update

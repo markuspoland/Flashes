@@ -5,10 +5,12 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public ScenePostProcess postProcess;
+    public TimeTravel timeTravel;
     float timer = 0f;
     
     void Start()
-    {        
+    {
+        Invoke("PlayTimeJumpHalfTwo", 0.1f);
         postProcess.SetExposureToTarget();
     }
 
@@ -35,5 +37,8 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    
+    void PlayTimeJumpHalfTwo()
+    {
+        timeTravel.PlayTimeJumpHalfTwo();
+    }
 }

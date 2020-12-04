@@ -12,6 +12,10 @@ public class Hatch : MonoBehaviour
     public List<GameObject> objectToActivate;
     public List<GameObject> objectToDeactivate;
     public ScenePostProcess postProcess;
+    public TimeTravel timeTravel;
+
+    AudioSource audioSource;
+    
     bool flash = false;
 
     IInventory inventory;
@@ -19,6 +23,7 @@ public class Hatch : MonoBehaviour
     private void Start()
     {
         inventory = FindObjectOfType<Inventory>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -62,6 +67,7 @@ public class Hatch : MonoBehaviour
 
     private IEnumerator ResetCamera()
     {
+        timeTravel.PlayTimeJumpHalfOne();
         yield return new WaitForSeconds(1f);
         cameraHandler.ActivateEndCamera();
         playerController.gameObject.transform.Rotate(0f, 180f, 0f);

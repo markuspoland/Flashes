@@ -19,6 +19,8 @@ public class TimeTravel : MonoBehaviour
     public FogHandler fogHandler;
 
     public AudioClip timeJumpFull;
+    public AudioClip timeJumpHalfOne;
+    public AudioClip timeJumpHalfTwo;
 
     AudioSource audioSource;
 
@@ -80,7 +82,7 @@ public class TimeTravel : MonoBehaviour
 
         if (!hasPlayed)
         {
-            audioSource.PlayOneShot(timeJumpFull);
+            PlayTimeJumpFull();
             hasPlayed = true;
         }
         
@@ -116,5 +118,20 @@ public class TimeTravel : MonoBehaviour
     private void RegainMovement(float duration)
     {
         playerController.ShowDefaultCamera(duration, () => { playerController.IsImmobilized = false; });
+    }
+
+    public void PlayTimeJumpFull()
+    {
+        audioSource.PlayOneShot(timeJumpFull);
+    }
+
+    public void PlayTimeJumpHalfOne()
+    {
+        audioSource.PlayOneShot(timeJumpHalfOne);
+    }
+
+    public void PlayTimeJumpHalfTwo()
+    {
+        audioSource.PlayOneShot(timeJumpHalfTwo);
     }
 }
