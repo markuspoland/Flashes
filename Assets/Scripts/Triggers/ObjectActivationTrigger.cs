@@ -5,13 +5,14 @@ using UnityEngine;
 public class ObjectActivationTrigger : MonoBehaviour
 {
 
-    public List<GameObject> objectToActivate;
+    public List<GameObject> objectsToActivate;
+    public List<GameObject> objectsToDeactivate;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            foreach (GameObject obj in objectToActivate)
+            foreach (GameObject obj in objectsToActivate)
             {
                 obj.SetActive(true);
             }

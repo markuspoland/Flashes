@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeTravel : MonoBehaviour
 {
@@ -97,7 +98,12 @@ public class TimeTravel : MonoBehaviour
         }
 
         playerCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = defaultShakeAmplitude;
-        fogHandler.ResetFog();
+        
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            fogHandler.ResetFog();
+        }
+        
         postProcess.FadeOut();
         
     }
