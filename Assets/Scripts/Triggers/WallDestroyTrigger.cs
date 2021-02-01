@@ -8,6 +8,7 @@ public class WallDestroyTrigger : MonoBehaviour
     public Animator playerAnim;
     public PlayerController playerController;
     public GameObject monster;
+    public GameObject enterMonsterAnim;
     public EnemyAI monsterAI;
     public CameraHandler cameraHandler;
 
@@ -19,6 +20,7 @@ public class WallDestroyTrigger : MonoBehaviour
             playerController.ShowActionCamera();
             wall.WallDestroy();
             monster.SetActive(true);
+            enterMonsterAnim.SetActive(true);
             playerAnim.SetTrigger("Block");
             StartCoroutine(MonsterScream());
             
