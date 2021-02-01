@@ -1825,3 +1825,208 @@ System memory in use after: 227.7 MB.
 Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5180.
 Total: 7.727300 ms (FindLiveObjects: 1.037800 ms CreateObjectMapping: 0.650900 ms MarkObjects: 5.653400 ms  DeleteObjects: 0.383000 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003085 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.221 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3994 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 227.5 MB.
+System memory in use after: 227.7 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5182.
+Total: 4.396900 ms (FindLiveObjects: 0.548700 ms CreateObjectMapping: 0.156700 ms MarkObjects: 3.367500 ms  DeleteObjects: 0.322700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 899.440085 seconds.
+  path: Assets/ANIMATIONS/animators/Enemy Animator Override 1.overrideController
+  artifactKey: Guid(db91c7c699fcbf94999fa706854e5008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Enemy Animator Override 1.overrideController using Guid(db91c7c699fcbf94999fa706854e5008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76d022d01407e504dea0d84d071a8bc') in 0.045039 seconds
+  Import took 0.052740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001765 seconds.
+  path: Assets/ANIMATIONS/animators/Enemy Animator Override 1.overrideController
+  artifactKey: Guid(db91c7c699fcbf94999fa706854e5008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Enemy Animator Override 1.overrideController using Guid(db91c7c699fcbf94999fa706854e5008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76d022d01407e504dea0d84d071a8bc') in 0.007241 seconds
+  Import took 0.016740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.416911 seconds.
+  path: Assets/ANIMATIONS/animators/Enemy Animator.controller
+  artifactKey: Guid(572523d8ee7189449920d2fef7ac0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Enemy Animator.controller using Guid(572523d8ee7189449920d2fef7ac0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf258a86b91fdde92c9bc08cf2a74c7e') in 0.010256 seconds
+  Import took 0.016860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009798 seconds.
+  path: Assets/ANIMATIONS/animators/Enemy Animator.controller
+  artifactKey: Guid(572523d8ee7189449920d2fef7ac0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Enemy Animator.controller using Guid(572523d8ee7189449920d2fef7ac0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf258a86b91fdde92c9bc08cf2a74c7e') in 0.004943 seconds
+  Import took 0.012220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.877507 seconds.
+  path: Assets/ANIMATIONS/animators/Enemy Animator Override.overrideController
+  artifactKey: Guid(e28050f8a2f1e014ba664820317dbb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Enemy Animator Override.overrideController using Guid(e28050f8a2f1e014ba664820317dbb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be06779635c131c341f996fa0be8d36b') in 0.019872 seconds
+  Import took 0.026768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001458 seconds.
+  path: Assets/ANIMATIONS/animators/Enemy Animator Override.overrideController
+  artifactKey: Guid(e28050f8a2f1e014ba664820317dbb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Enemy Animator Override.overrideController using Guid(e28050f8a2f1e014ba664820317dbb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be06779635c131c341f996fa0be8d36b') in 0.005867 seconds
+  Import took 0.013364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.030940 seconds.
+  path: Assets/ANIMATIONS/animators/Deadbody.controller
+  artifactKey: Guid(16af2a7d0d6ec754bb80b6d38f82ad83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Deadbody.controller using Guid(16af2a7d0d6ec754bb80b6d38f82ad83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5344453845ee0c90d5dd588cf45e8083') in 0.009196 seconds
+  Import took 0.015894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018241 seconds.
+  path: Assets/ANIMATIONS/animators/Deadbody.controller
+  artifactKey: Guid(16af2a7d0d6ec754bb80b6d38f82ad83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Deadbody.controller using Guid(16af2a7d0d6ec754bb80b6d38f82ad83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5344453845ee0c90d5dd588cf45e8083') in 0.004334 seconds
+  Import took 0.011422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.517782 seconds.
+  path: Assets/ANIMATIONS/animators/Car Animator.controller
+  artifactKey: Guid(1f1705bbeee9db147a586dd5148763f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Car Animator.controller using Guid(1f1705bbeee9db147a586dd5148763f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf3a65c680b46895133004e606cc423') in 0.007910 seconds
+  Import took 0.014998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015967 seconds.
+  path: Assets/ANIMATIONS/animators/Car Animator.controller
+  artifactKey: Guid(1f1705bbeee9db147a586dd5148763f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Car Animator.controller using Guid(1f1705bbeee9db147a586dd5148763f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf3a65c680b46895133004e606cc423') in 0.003762 seconds
+  Import took 0.010242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.252865 seconds.
+  path: Assets/ANIMATIONS/animators/test.overrideController
+  artifactKey: Guid(af9d82c8efd9d134cab4e43b7fcfdd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/test.overrideController using Guid(af9d82c8efd9d134cab4e43b7fcfdd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084707142caa2f41c0b00cef6d72eb3b') in 0.008290 seconds
+  Import took 0.015300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.187066 seconds.
+  path: Assets/ANIMATIONS/animators/Player Override Animator.overrideController
+  artifactKey: Guid(b1981fdafd7ef3549b6fef33005d0505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Player Override Animator.overrideController using Guid(b1981fdafd7ef3549b6fef33005d0505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7559ca7b51811b3a8b9aa2814997150d') in 0.009301 seconds
+  Import took 0.015934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017906 seconds.
+  path: Assets/ANIMATIONS/animators/Player Override Animator.overrideController
+  artifactKey: Guid(b1981fdafd7ef3549b6fef33005d0505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Player Override Animator.overrideController using Guid(b1981fdafd7ef3549b6fef33005d0505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7559ca7b51811b3a8b9aa2814997150d') in 0.005095 seconds
+  Import took 0.011624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.191272 seconds.
+  path: Assets/ANIMATIONS/animators/Player Animator.controller
+  artifactKey: Guid(056eafdca6755d64cbd76d208fdbd1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Player Animator.controller using Guid(056eafdca6755d64cbd76d208fdbd1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ce2e20a8b3a1537fab08877eca6d57') in 0.328005 seconds
+  Import took 0.335849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.648109 seconds.
+  path: Assets/ANIMATIONS/animators/Player Intro Animator.controller
+  artifactKey: Guid(fae67d6cfd7ab2f42940ab945f5c4eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Player Intro Animator.controller using Guid(fae67d6cfd7ab2f42940ab945f5c4eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c324c68f586713ebbc272a70ad020a') in 0.010285 seconds
+  Import took 0.016957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015284 seconds.
+  path: Assets/ANIMATIONS/animators/Player Intro Animator.controller
+  artifactKey: Guid(fae67d6cfd7ab2f42940ab945f5c4eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Player Intro Animator.controller using Guid(fae67d6cfd7ab2f42940ab945f5c4eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c324c68f586713ebbc272a70ad020a') in 0.005125 seconds
+  Import took 0.011592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.087359 seconds.
+  path: Assets/ANIMATIONS/animators/Zombie Animator.controller
+  artifactKey: Guid(e830ba09c7bc289438ade0f6ef26ca2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Zombie Animator.controller using Guid(e830ba09c7bc289438ade0f6ef26ca2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793b477239fe8136521f7369ada3402b') in 0.062964 seconds
+  Import took 0.069809 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003087 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.206 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3994 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 227.6 MB.
+System memory in use after: 227.7 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5184.
+Total: 5.025300 ms (FindLiveObjects: 0.824000 ms CreateObjectMapping: 0.333600 ms MarkObjects: 3.509900 ms  DeleteObjects: 0.356200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002804 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.301 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3994 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 227.6 MB.
+System memory in use after: 227.8 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5186.
+Total: 10.407100 ms (FindLiveObjects: 1.123200 ms CreateObjectMapping: 0.538100 ms MarkObjects: 8.427100 ms  DeleteObjects: 0.316300 ms)
+
