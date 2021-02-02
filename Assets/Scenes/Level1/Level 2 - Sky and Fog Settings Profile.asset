@@ -72,6 +72,29 @@ MonoBehaviour:
   fogType:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &-3200929912049203737
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ab44aadfb1804db5fd470983ac1b8, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  gamma:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: -0.021186465}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
 --- !u!114 &-2720571150993800611
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -149,24 +172,24 @@ MonoBehaviour:
     max: 360
   skyIntensityMode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   exposure:
     m_OverrideState: 1
     m_Value: 1.04
   multiplier:
     m_OverrideState: 1
-    m_Value: 0.48
+    m_Value: 2.36
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 1
-    m_Value: 0.017415065
+    m_Value: 0.8174698
     min: 0
   upperHemisphereLuxColor:
     m_OverrideState: 1
-    m_Value: {x: 0.09371709, y: 0.19990116, z: 0.5}
+    m_Value: {x: 0.27889717, y: 0.35756263, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 1
-    m_Value: 20000
+    m_Value: 0.5
   updateMode:
     m_OverrideState: 1
     m_Value: 0
@@ -179,7 +202,7 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: 97259d0c0ea9f491692be825da27978a, type: 3}
+    m_Value: {fileID: 8900000, guid: 6fa3f446deee84c52aec507bd0aca28c, type: 3}
   enableDistortion:
     m_OverrideState: 0
     m_Value: 0
@@ -269,6 +292,7 @@ MonoBehaviour:
   - {fileID: 7823366612374702902}
   - {fileID: -4560850648975513468}
   - {fileID: -2720571150993800611}
+  - {fileID: -3200929912049203737}
 --- !u!114 &5577524710892674219
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -285,7 +309,7 @@ MonoBehaviour:
   m_AdvancedMode: 1
   quality:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 3
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -293,8 +317,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   color:
-    m_OverrideState: 0
-    m_Value: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -335,7 +359,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   albedo:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 0.8915094, g: 0.9048812, b: 1, a: 1}
     hdr: 0
     showAlpha: 1
@@ -347,7 +371,7 @@ MonoBehaviour:
     max: 1
   depthExtent:
     m_OverrideState: 0
-    m_Value: 64
+    m_Value: 3987
     min: 0.1
   denoisingMode:
     m_OverrideState: 0
@@ -416,7 +440,7 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: -4.74
+    m_Value: -3.6801233
   compensation:
     m_OverrideState: 1
     m_Value: -3.74
