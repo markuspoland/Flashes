@@ -25,7 +25,7 @@ public class ZombieSounds : MonoBehaviour
     public void PlayMoaningSound()
     {
                 
-            if (audioSource.isPlaying || !audioSource) return;
+            if (!audioSource || audioSource.isPlaying) return;
 
             audioSource.loop = true;
             audioSource.clip = zombieMoaning;

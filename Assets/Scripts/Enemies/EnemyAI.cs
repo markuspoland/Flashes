@@ -24,12 +24,20 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
 
     float distanceToPlayer = Mathf.Infinity;
-    void Start()
+
+    void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         enemyHealth = GetComponent<EnemyHealth>();
+    }
+    void Start()
+    {
+        //navMeshAgent = GetComponent<NavMeshAgent>();
+        //anim = GetComponent<Animator>();
+        //audioSource = GetComponent<AudioSource>();
+        //enemyHealth = GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame

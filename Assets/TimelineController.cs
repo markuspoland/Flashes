@@ -8,12 +8,21 @@ public class TimelineController : MonoBehaviour
     Animator anim;
     EnemyAI enemy;
     PlayableDirector director;
-    void Start()
+
+    void Awake()
     {
-        anim = GetComponent <Animator>();
+        anim = GetComponent<Animator>();
         enemy = GetComponent<EnemyAI>();
         director = GetComponent<PlayableDirector>();
-        enemy.DisableNavMesh();
+    }
+    void Start()
+    {
+        
+        if (enemy)
+        {
+            DisableEnemyNavMesh();
+        }
+        
     }
 
     // Update is called once per frame
@@ -25,5 +34,10 @@ public class TimelineController : MonoBehaviour
             anim.applyRootMotion = false;
             enabled = false;
         }
+    }
+
+    void DisableEnemyNavMesh()
+    {
+        enemy.DisableNavMesh();
     }
 }
