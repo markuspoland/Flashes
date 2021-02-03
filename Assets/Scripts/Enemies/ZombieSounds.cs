@@ -24,11 +24,13 @@ public class ZombieSounds : MonoBehaviour
 
     public void PlayMoaningSound()
     {
-        if (audioSource.isPlaying) return;
+                
+            if (audioSource.isPlaying || !audioSource) return;
 
-        audioSource.loop = true;
-        audioSource.clip = zombieMoaning;
-        audioSource.Play();
+            audioSource.loop = true;
+            audioSource.clip = zombieMoaning;
+            audioSource.Play();
+       
     }
 
     public void FemaleZombieAttack()

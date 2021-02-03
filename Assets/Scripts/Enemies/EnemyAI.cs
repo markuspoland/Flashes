@@ -82,6 +82,11 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent.enabled = true;
     }
 
+    public void DisableNavMesh()
+    {
+        navMeshAgent.enabled = false;
+    }
+
     public void GetHit(float damage)
     {
         if (IsKilled) return;
