@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     public float chaseRange = 10f;
+    public float turnSpeed = 2f;
     public Transform playerTransform;
     public Transform bloodPos;
     [HideInInspector]
@@ -63,6 +64,7 @@ public class EnemyAI : MonoBehaviour
 
         if (distanceToPlayer <= chaseRange)
         {
+            FaceTarget();
             anim.SetBool("Attacking", false);
             anim.SetBool("Walk", true);
             navMeshAgent.SetDestination(playerTransform.position);
@@ -83,6 +85,13 @@ public class EnemyAI : MonoBehaviour
         {
             anim.SetBool("Attacking", true);
         }
+    }
+
+    void FaceTarget()
+    {
+        Vector3 direction = (playerTransform.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 
     public void EnableNavMesh()

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class LevelManager : MonoBehaviour
     
     void Start()
     {
-        //Invoke("PlayTimeJumpHalfTwo", 0.1f);
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            Invoke("PlayTimeJumpHalfTwo", 0.1f);
+        }
+        
         postProcess.SetExposureToTarget();
     }
 
@@ -39,6 +44,6 @@ public class LevelManager : MonoBehaviour
 
     void PlayTimeJumpHalfTwo()
     {
-        //timeTravel.PlayTimeJumpHalfTwo();
+        timeTravel.PlayTimeJumpHalfTwo();
     }
 }

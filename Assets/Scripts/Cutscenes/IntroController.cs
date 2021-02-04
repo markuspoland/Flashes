@@ -30,7 +30,7 @@ public class IntroController : MonoBehaviour
     {
         if (postProcess.IsFaded())
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadSceneAsync(1);
         }
     }
 
