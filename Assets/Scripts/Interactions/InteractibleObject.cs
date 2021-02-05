@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class InteractibleObject : MonoBehaviour
 {
-    public float interactionRadius = 1;
-    public float visibilityRadius = 3;
+    public float interactionRadius = 2.5f;
+    public float visibilityRadius = 8;
     public bool interactionEnabled = true;
 
     private GameObject indicatorFar;

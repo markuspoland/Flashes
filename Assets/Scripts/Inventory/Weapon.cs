@@ -33,7 +33,7 @@ public class Weapon : MonoBehaviour, IPickable
     public enum Type
     {
         MELEE,
-        RANGED
+        RANGED_ONE_HAND
     }
 
     public float damageOnHit = 50f;
@@ -53,10 +53,23 @@ public class Weapon : MonoBehaviour, IPickable
     {
         playerController.ShowActionCamera();
         TriggerAction("grabFromFloor");
-        TriggerAction("equippedAxe");
+        ChangeWeaponAnimationLayer();
         StartCoroutine(GrabWeaponFromFloor());
         playerController.ShowDefaultCamera(2.1f);
         playerCombat.EquippedWeapon = this;
+    }
+
+    private void ChangeWeaponAnimationLayer()
+    {
+        switch (WeaponType)
+        {
+            case Type.MELEE:
+                playerController.animator.SetBool("equippedAxe", true);
+                break;
+            case Type.RANGED_ONE_HAND:
+                playerController.animator.SetBool("equippedPistol", true);
+                break;
+        }
     }
 
     private void EquipWeapon()

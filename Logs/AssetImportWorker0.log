@@ -1965,3 +1965,758 @@ System memory in use after: 262.8 MB.
 Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5276.
 Total: 4.892000 ms (FindLiveObjects: 0.531800 ms CreateObjectMapping: 0.150900 ms MarkObjects: 3.866100 ms  DeleteObjects: 0.341900 ms)
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.5 MB.
+System memory in use after: 183.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 5276.
+Total: 6.992200 ms (FindLiveObjects: 0.828700 ms CreateObjectMapping: 0.258700 ms MarkObjects: 5.697500 ms  DeleteObjects: 0.205200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2248.378875 seconds.
+  path: Assets/Pistol/Prefabs/Pistol.prefab
+  artifactKey: Guid(3d3a4f5fcb4669e4396a9e4382609315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pistol/Prefabs/Pistol.prefab using Guid(3d3a4f5fcb4669e4396a9e4382609315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188ede554a07e109e087f4eda3769132') in 1.379845 seconds
+  Import took 1.390902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.511663 seconds.
+  path: Assets/Pistol/Materials
+  artifactKey: Guid(c8b12db38b8d0d64486a7085d7ce1f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pistol/Materials using Guid(c8b12db38b8d0d64486a7085d7ce1f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef1350ea6d5191e6acbd1bfef94d138') in 0.006987 seconds
+  Import took 0.013493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.661932 seconds.
+  path: Assets/Pistol/Pistol.FBX
+  artifactKey: Guid(788267e74b26df7408c35e159e98bcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pistol/Pistol.FBX using Guid(788267e74b26df7408c35e159e98bcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693c674317074ce43b727f5adda5c6f4') in 0.172101 seconds
+  Import took 0.183249 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004712 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.228 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 263.4 MB.
+System memory in use after: 263.8 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5380.
+Total: 5.386300 ms (FindLiveObjects: 0.694200 ms CreateObjectMapping: 0.287300 ms MarkObjects: 4.055200 ms  DeleteObjects: 0.347900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002872 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.062 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 263.4 MB.
+System memory in use after: 263.8 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5382.
+Total: 7.826000 ms (FindLiveObjects: 0.756000 ms CreateObjectMapping: 0.248900 ms MarkObjects: 6.440500 ms  DeleteObjects: 0.378000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 976.371732 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations
+  artifactKey: Guid(74b4eaa29a9004147be6be6ed2fe2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations using Guid(74b4eaa29a9004147be6be6ed2fe2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1789433ab820c66b418ce4fab9c865c') in 0.013533 seconds
+  Import took 0.021190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005523 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations
+  artifactKey: Guid(74b4eaa29a9004147be6be6ed2fe2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations using Guid(74b4eaa29a9004147be6be6ed2fe2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1789433ab820c66b418ce4fab9c865c') in 0.004240 seconds
+  Import took 0.011375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.705221 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Actions
+  artifactKey: Guid(850f787b07501cd49be8a27c25bc5cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Actions using Guid(850f787b07501cd49be8a27c25bc5cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c349779b3a46035a38c6ac936446b31d') in 0.008656 seconds
+  Import took 0.015275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.526019 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat
+  artifactKey: Guid(bf5216126dae0434a990242a2232f8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat using Guid(bf5216126dae0434a990242a2232f8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1d7beb6ad3eabada15d7c1965db08b') in 0.007247 seconds
+  Import took 0.014068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.113663 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol
+  artifactKey: Guid(d547e016fd69c4e49abf94482e3effa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol using Guid(d547e016fd69c4e49abf94482e3effa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac819ec440dc9483e6d56d687340347') in 0.003689 seconds
+  Import took 0.010837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.380401 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx
+  artifactKey: Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx using Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e61723cf0ff5f72fa45069c599a551c') in 0.032938 seconds
+  Import took 0.041930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.545399 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx
+  artifactKey: Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx using Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5366fabbcfe6cc1730a44245595c29f') in 0.011137 seconds
+  Import took 0.018035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.421895 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx
+  artifactKey: Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx using Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0ff0f14d47231e3996e1889c112fc2') in 0.007516 seconds
+  Import took 0.015067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.086705 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol jump (2).fbx
+  artifactKey: Guid(d6103bde3e390d5409f5701716072da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol jump (2).fbx using Guid(d6103bde3e390d5409f5701716072da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f222723d7bac1ac626fba83d7a7cecd6') in 0.011460 seconds
+  Import took 0.019094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024239 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol jump (2).fbx
+  artifactKey: Guid(d6103bde3e390d5409f5701716072da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol jump (2).fbx using Guid(d6103bde3e390d5409f5701716072da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f222723d7bac1ac626fba83d7a7cecd6') in 0.007473 seconds
+  Import took 0.014467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.533558 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx
+  artifactKey: Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx using Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd26162a71ea69f25dd5a4c2c7cde853') in 0.007507 seconds
+  Import took 0.014876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.512514 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol jump.fbx
+  artifactKey: Guid(cd3dacec646fbff4490c873b158130cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol jump.fbx using Guid(cd3dacec646fbff4490c873b158130cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c81084dc09cece98c26f93c56a24db') in 0.012367 seconds
+  Import took 0.019687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.125423 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneel to stand.fbx
+  artifactKey: Guid(49be347bd64b59f4a974dc4ec37f2aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneel to stand.fbx using Guid(49be347bd64b59f4a974dc4ec37f2aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d91114cfeddd26ddad31b0295eb1f02') in 0.011293 seconds
+  Import took 0.019265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.690116 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx
+  artifactKey: Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx using Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e30c41afc21d1548eecb000f4765ff') in 0.007319 seconds
+  Import took 0.014653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.249955 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc (2).fbx
+  artifactKey: Guid(5b83503e3c4a859478d95ed7c88a0d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc (2).fbx using Guid(5b83503e3c4a859478d95ed7c88a0d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5f18250972936c5faac12277621ca9') in 0.011486 seconds
+  Import took 0.018653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.162046 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc.fbx
+  artifactKey: Guid(205ae2e52548847498f534d7088028ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc.fbx using Guid(205ae2e52548847498f534d7088028ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915e216baee2a70ed3caf69cf681a63b') in 0.011750 seconds
+  Import took 0.018716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.537369 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run backward arc (2).fbx
+  artifactKey: Guid(28042c6efb15fc64c96a073c0c4ebc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run backward arc (2).fbx using Guid(28042c6efb15fc64c96a073c0c4ebc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ca102b04b6170affac5d402e37942f') in 0.010714 seconds
+  Import took 0.017755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.879165 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run backward arc.fbx
+  artifactKey: Guid(ff5819d7f87c71a4f8be795fef9f2ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run backward arc.fbx using Guid(ff5819d7f87c71a4f8be795fef9f2ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c70813373682cd1990462fc94f8622c5') in 0.011415 seconds
+  Import took 0.018296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.881842 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run backward.fbx
+  artifactKey: Guid(1f7a30ee5c6bc4f4085eb54edb49a170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run backward.fbx using Guid(1f7a30ee5c6bc4f4085eb54edb49a170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4dbea096df14ba4b875a51cab65879d') in 0.011349 seconds
+  Import took 0.018640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.250800 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run.fbx
+  artifactKey: Guid(e74aacd72e819574abb7c20a4593de5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run.fbx using Guid(e74aacd72e819574abb7c20a4593de5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434c514674ad9db3dfe72ece65e756fd') in 0.012476 seconds
+  Import took 0.019864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.299712 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol stand to kneel.fbx
+  artifactKey: Guid(b1048e06214237a4ab8a308b2f577f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol stand to kneel.fbx using Guid(b1048e06214237a4ab8a308b2f577f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f80430cee1705f44fde7dccc1eee7c3') in 0.010962 seconds
+  Import took 0.018456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.988774 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe (2).fbx
+  artifactKey: Guid(07b32be38fffdad4092d9e8c032e1e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe (2).fbx using Guid(07b32be38fffdad4092d9e8c032e1e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e6137e6902d56f34bcf5cbecd2f97d') in 0.010952 seconds
+  Import took 0.017880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.538109 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe.fbx
+  artifactKey: Guid(4d965545423d88d479518f2e9ac9504e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe.fbx using Guid(4d965545423d88d479518f2e9ac9504e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b66d74bdb29e8a9f5adc79f5b085f0f') in 0.010944 seconds
+  Import took 0.018810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.921446 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc (2).fbx
+  artifactKey: Guid(c664db1793dd1634f97e3a8521b72047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc (2).fbx using Guid(c664db1793dd1634f97e3a8521b72047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1585dd9b3191855ca8b35c2b4958d33d') in 0.011103 seconds
+  Import took 0.018495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.628236 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx
+  artifactKey: Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx using Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590e2f4f3c3d25cb447236742dbc787b') in 0.012329 seconds
+  Import took 0.019522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.893806 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc (2).fbx
+  artifactKey: Guid(c664db1793dd1634f97e3a8521b72047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc (2).fbx using Guid(c664db1793dd1634f97e3a8521b72047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47cabf5991728e3e630e28e2a65d4d78') in 0.007187 seconds
+  Import took 0.014415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.982975 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx
+  artifactKey: Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx using Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944c42c0e80a9b24a1f50736a8141257') in 0.013127 seconds
+  Import took 0.020277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.702061 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx
+  artifactKey: Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx using Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aa98362cc995107e1341a821a022751') in 0.012133 seconds
+  Import took 0.019883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.635123 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward.fbx
+  artifactKey: Guid(6099397af6a0c2f45b195388e647e945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward.fbx using Guid(6099397af6a0c2f45b195388e647e945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc500fe2f2ae4775d1b0ccaedfc4bb6') in 0.011080 seconds
+  Import took 0.019467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.745926 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk.fbx
+  artifactKey: Guid(78a3f4b4d4f712740849af988ceac19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk.fbx using Guid(78a3f4b4d4f712740849af988ceac19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55045f48e82cbef13e4d2c5233d3907') in 0.011012 seconds
+  Import took 0.017951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.152435 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/xbot.fbx
+  artifactKey: Guid(200a557d318a82543b8af07db30bf08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/xbot.fbx using Guid(200a557d318a82543b8af07db30bf08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b64fc9d4d511cc37fd11f9889ba15ad') in 1.223819 seconds
+  Import took 1.231495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.161429 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk.fbx
+  artifactKey: Guid(78a3f4b4d4f712740849af988ceac19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk.fbx using Guid(78a3f4b4d4f712740849af988ceac19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd449f3dc7e46233d6d1b938f2f0e67') in 0.007030 seconds
+  Import took 0.014752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 314.740076 seconds.
+  path: Assets/ANIMATIONS/animators
+  artifactKey: Guid(23e393628c69a934daa87394b22c2fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators using Guid(23e393628c69a934daa87394b22c2fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604d24971ff1cfff10af616fcd7d23c8') in 0.008112 seconds
+  Import took 0.016258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.797422 seconds.
+  path: Assets/ANIMATIONS/animators/Enemy Animator.controller
+  artifactKey: Guid(572523d8ee7189449920d2fef7ac0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Enemy Animator.controller using Guid(572523d8ee7189449920d2fef7ac0b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b3c4f5098cc0df2962ced71d864737') in 0.012046 seconds
+  Import took 0.019108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 347.811426 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Forward Diagonal LEFT.fbx
+  artifactKey: Guid(0ca00b2034f138f4980293dc01d020c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Forward Diagonal LEFT.fbx using Guid(0ca00b2034f138f4980293dc01d020c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b9a4ebe204018dbb590c6660333ebb') in 0.012200 seconds
+  Import took 0.019671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.600688 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Forward Diagonal.fbx
+  artifactKey: Guid(3df9565c9405f4349a6d9dda08f36c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Forward Diagonal.fbx using Guid(3df9565c9405f4349a6d9dda08f36c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed36d152e915879d830789ad03272d6') in 0.012330 seconds
+  Import took 0.019459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.854170 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Right Strafe Walk.fbx
+  artifactKey: Guid(f4b87604c1b81bc41815452a5a26cec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Right Strafe Walk.fbx using Guid(f4b87604c1b81bc41815452a5a26cec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ff0c258be3e51d00d246efc225e650') in 0.011751 seconds
+  Import took 0.018842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.589866 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Left Strafe Walk.fbx
+  artifactKey: Guid(1dd191c0feb15e146a566fde3a6853b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Left Strafe Walk.fbx using Guid(1dd191c0feb15e146a566fde3a6853b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1935be3dd3d398c913026578154c78d') in 0.012274 seconds
+  Import took 0.020258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.535630 seconds.
+  path: Assets/ANIMATIONS/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Walk01.fbx
+  artifactKey: Guid(6e2bfa8498b0db840865dd4eb42ce0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Walk01.fbx using Guid(6e2bfa8498b0db840865dd4eb42ce0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70de342166863edf7c3ad6c4d26e8faf') in 0.012182 seconds
+  Import took 0.020394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.751426 seconds.
+  path: Assets/ANIMATIONS/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle01.fbx
+  artifactKey: Guid(59a515d01e333a74c82eb5c7c8434049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/Kevin Iglesias/Basic Motions Pack/Animations/BasicMotions@Idle01.fbx using Guid(59a515d01e333a74c82eb5c7c8434049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c2784c8ad6577813094de1ce97249b') in 0.012679 seconds
+  Import took 0.020946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.518730 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Walk Backward.fbx
+  artifactKey: Guid(c5eb76067d784b14e9ab2319ea1ac3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Walk Backward.fbx using Guid(c5eb76067d784b14e9ab2319ea1ac3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '082f938c6687d37133c5fa8b9661a0e1') in 0.011036 seconds
+  Import took 0.018458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.424459 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Backward Diagonal left.fbx
+  artifactKey: Guid(a13709d42dca6b942b93c8af7c42f9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Backward Diagonal left.fbx using Guid(a13709d42dca6b942b93c8af7c42f9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76798c37cdd74b76df49718e8fcb6f6e') in 0.011000 seconds
+  Import took 0.018070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.593878 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Backward Diagonal.fbx
+  artifactKey: Guid(bc8c78b243ef0154993072fe371394e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Movement/xbot@Jog Backward Diagonal.fbx using Guid(bc8c78b243ef0154993072fe371394e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4ceec7b82a11e73e4d30e0c649f662') in 0.011480 seconds
+  Import took 0.018581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 288.088983 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc (2).fbx
+  artifactKey: Guid(5b83503e3c4a859478d95ed7c88a0d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc (2).fbx using Guid(5b83503e3c4a859478d95ed7c88a0d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7f4a9c6be9dc52a12f7271efcc7e81') in 0.025973 seconds
+  Import took 0.033350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017012 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc (2).fbx
+  artifactKey: Guid(5b83503e3c4a859478d95ed7c88a0d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol run arc (2).fbx using Guid(5b83503e3c4a859478d95ed7c88a0d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7f4a9c6be9dc52a12f7271efcc7e81') in 0.007564 seconds
+  Import took 0.014512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.317593 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx
+  artifactKey: Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx using Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08cd308aede468cbd57c533d9f3ae812') in 0.025603 seconds
+  Import took 0.034077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010359 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx
+  artifactKey: Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx using Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08cd308aede468cbd57c533d9f3ae812') in 0.006861 seconds
+  Import took 0.013797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.823546 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx
+  artifactKey: Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx using Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f155ff1f162fad2ee9b8383325423d37') in 0.025671 seconds
+  Import took 0.032515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012742 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx
+  artifactKey: Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx using Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f155ff1f162fad2ee9b8383325423d37') in 0.008133 seconds
+  Import took 0.016796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.848506 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx
+  artifactKey: Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx using Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96bbec1fa33a3655f2fccec43be92fc') in 0.024710 seconds
+  Import took 0.032526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011584 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx
+  artifactKey: Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx using Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96bbec1fa33a3655f2fccec43be92fc') in 0.007202 seconds
+  Import took 0.014321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.887819 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol stand to kneel.fbx
+  artifactKey: Guid(b1048e06214237a4ab8a308b2f577f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol stand to kneel.fbx using Guid(b1048e06214237a4ab8a308b2f577f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c3590e4976899492e11b31ba41433d') in 0.024484 seconds
+  Import took 0.032094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024110 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol stand to kneel.fbx
+  artifactKey: Guid(b1048e06214237a4ab8a308b2f577f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol stand to kneel.fbx using Guid(b1048e06214237a4ab8a308b2f577f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c3590e4976899492e11b31ba41433d') in 0.007150 seconds
+  Import took 0.014052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.329164 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe.fbx
+  artifactKey: Guid(4d965545423d88d479518f2e9ac9504e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe.fbx using Guid(4d965545423d88d479518f2e9ac9504e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7852fb4a323986b160dccb237e728a') in 0.011846 seconds
+  Import took 0.018711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.349488 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe (2).fbx
+  artifactKey: Guid(07b32be38fffdad4092d9e8c032e1e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol strafe (2).fbx using Guid(07b32be38fffdad4092d9e8c032e1e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e41b48490dc7b016ee57ec2dd8b413') in 0.010740 seconds
+  Import took 0.017777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 155.615106 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc (2).fbx
+  artifactKey: Guid(c664db1793dd1634f97e3a8521b72047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc (2).fbx using Guid(c664db1793dd1634f97e3a8521b72047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a31c5388c3f4aaf3b9a33f0fe8972c7') in 0.024825 seconds
+  Import took 0.032367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.680503 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx
+  artifactKey: Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk arc.fbx using Guid(d9a68843937964a4c8fdc945219ec661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88427dd6e87383adf43f8db61c1d28ed') in 0.008452 seconds
+  Import took 0.017022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.681554 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx
+  artifactKey: Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc (2).fbx using Guid(1af2313d858ad2349bb7b2c2b1900f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704c56c45d50eeeab3cce63994843b1e') in 0.008180 seconds
+  Import took 0.016421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.077025 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx
+  artifactKey: Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol walk backward arc.fbx using Guid(cd176cb5e1f21b64882940c2c58cfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b8bf0f4cb8a20a1d4a527fd393a051') in 0.012349 seconds
+  Import took 0.019700 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002805 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.095 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.0 MB.
+System memory in use after: 264.4 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5486.
+Total: 6.418200 ms (FindLiveObjects: 0.581200 ms CreateObjectMapping: 0.213400 ms MarkObjects: 5.176000 ms  DeleteObjects: 0.445700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002796 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.269 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.1 MB.
+System memory in use after: 264.4 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5488.
+Total: 7.972000 ms (FindLiveObjects: 0.787400 ms CreateObjectMapping: 0.243300 ms MarkObjects: 6.533700 ms  DeleteObjects: 0.406000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004445 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.689 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.1 MB.
+System memory in use after: 264.4 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5490.
+Total: 9.987300 ms (FindLiveObjects: 1.775200 ms CreateObjectMapping: 0.595600 ms MarkObjects: 6.949400 ms  DeleteObjects: 0.664800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 689.024204 seconds.
+  path: Assets/ANIMATIONS/animators/Player Animator.controller
+  artifactKey: Guid(056eafdca6755d64cbd76d208fdbd1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Player Animator.controller using Guid(056eafdca6755d64cbd76d208fdbd1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad6cfe919f4c6c19878d449ce70a9f4') in 0.439419 seconds
+  Import took 0.452535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.888824 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx
+  artifactKey: Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx using Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf865dd183847f2e1eb3cf38c7ecef68') in 0.023452 seconds
+  Import took 0.031239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013192 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx
+  artifactKey: Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol kneeling idle.fbx using Guid(58c9f51ec01ea084aadb1ca6b4a56516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf865dd183847f2e1eb3cf38c7ecef68') in 0.008040 seconds
+  Import took 0.016676 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002824 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.133 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.1 MB.
+System memory in use after: 264.5 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5492.
+Total: 6.094300 ms (FindLiveObjects: 0.957700 ms CreateObjectMapping: 0.356600 ms MarkObjects: 4.332200 ms  DeleteObjects: 0.445600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.587277 seconds.
+  path: Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx
+  artifactKey: Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/MixamoAnimations/Combat/Pistol/pistol idle.fbx using Guid(016bd3bfdcbfb1947953ca5e54801404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0091c8ed5df3919a933c27273bd726d') in 0.208719 seconds
+  Import took 0.218939 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002950 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.153 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.1 MB.
+System memory in use after: 264.5 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5494.
+Total: 6.523700 ms (FindLiveObjects: 1.064900 ms CreateObjectMapping: 0.514700 ms MarkObjects: 4.566500 ms  DeleteObjects: 0.375200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002916 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.315 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.1 MB.
+System memory in use after: 264.5 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5496.
+Total: 8.351900 ms (FindLiveObjects: 0.777700 ms CreateObjectMapping: 0.264000 ms MarkObjects: 6.878500 ms  DeleteObjects: 0.430100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 358.489570 seconds.
+  path: Assets/ANIMATIONS/animators/Player Animator.controller
+  artifactKey: Guid(056eafdca6755d64cbd76d208fdbd1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ANIMATIONS/animators/Player Animator.controller using Guid(056eafdca6755d64cbd76d208fdbd1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba97c7f5ffde5d635a3bac59145299d') in 0.041134 seconds
+  Import took 0.050208 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003411 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.336 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.1 MB.
+System memory in use after: 264.5 MB.
+
+Unloading 149 unused Assets to reduce memory usage. Loaded Objects now: 5498.
+Total: 8.325500 ms (FindLiveObjects: 0.871100 ms CreateObjectMapping: 0.315500 ms MarkObjects: 6.649000 ms  DeleteObjects: 0.487700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
